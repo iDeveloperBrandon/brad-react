@@ -1,15 +1,12 @@
 import React, { Component } from "react";
+import Navbar from "./components/layout/Navbar";
 import "./App.css";
 
 class App extends Component {
   render() {
-    const name = "john doe";
-    const loading = false;
-    const showName = true;
-
     return (
       <div className="App">
-        {loading ? <h4>Loading...</h4> : <h1>Hello from {showName && name}</h1>}
+        <Navbar title="Github Finder" icon="fab fa-github" />
       </div>
     );
   }
